@@ -1,0 +1,110 @@
+.foo {
+
+    margin-top: 140vh;
+    background: #24262b;
+    padding: 20px 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+
+}
+
+.footer-seccion h3 {
+
+    margin-bottom: 25px;
+    position: relative;
+    width: fit-content;
+
+}
+
+.footer-seccion h3::after {
+
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #e91e63;
+    bottom: -7px;
+    left: 0;
+
+}
+
+.footer-seccion ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.footer-seccion ul a {
+
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
+
+}
+
+.footer-seccion .absolute a:hover {
+
+    background: linear-gradient(to right, #ed1760, #7b00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+    transition: 0.7s;
+
+}
+
+.footer-seccion .social-icons {
+
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.footer-seccion .social-icons a {
+
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+}
+
+.social-icons li:hover a {
+
+    background: linear-gradient(to right, #ed1760, #7b00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5px;
+
+}
+
+.message {
+    
+    width: 100%;
+    height: 40px;
+    padding: 8px 10%;
+    background: #e91e63;
+    text-align: center;
+    align-items: center;
+
+}
+
+.message p {
+
+    font-size: 15px;
+    color: #bbb;
+
+}
