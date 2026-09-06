@@ -1,0 +1,429 @@
+:root{
+    
+    --ink:#1B1720;
+    --ink-soft:rgba(27,23,32,.66);
+    --ink-faint:rgba(27,23,32,.42);
+    --paper:#F7F3EA;
+    --paper-2:#EEE6D4;
+    --paper-text:#F7F3EA;
+    --paper-text-soft:rgba(247,243,234,.72);
+    --shu:#BC3A2A;
+    --shu-dark:#8F2A1E;
+    --indigo:#233752;
+    --gold:#B08A3E;
+    --line:rgba(27,23,32,.14);
+    --line-onDark:rgba(247,243,234,.18);
+
+}
+
+* {
+    
+    box-sizing: border-box;
+
+}
+  
+body {
+    
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing:antialiased;
+  
+}
+
+h1, h2, h3, .display {
+    
+    margin-top: 4%;
+    font-weight: 500;
+    line-height: 1.06;
+    margin: 0;
+
+}
+  
+.wrap {
+    
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+
+}
+
+.page-hero {
+    
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    color: var(--paper-text);
+    overflow:hidden;
+
+}
+
+.page-hero img {
+    
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 65%;
+
+}
+  
+.page-hero::after {
+    
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, 
+                rgba(20,16,22,.35) 0%, 
+                rgba(16,13,17,.88) 100%);
+            
+}
+
+.page-hero-inner { 
+    
+    position: relative;
+    z-index: 1;
+    padding: 56px 0;
+
+}
+  
+.page-kicker {
+    
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 13px;
+    color: var(--paper-text-soft);
+    margin-bottom: 12px;
+
+}
+  
+.page-kicker::before {
+    
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--shu);
+    display: inline-block;
+
+}
+  
+.page-title {
+    
+    font-size: clamp(34px,5vw,58px);
+    font-style: italic;
+    text-shadow: 0 4px 24px rgba(0,0,0,.35);
+
+}
+  
+.page-sub {
+    
+    text-align: justify;
+    margin-top: 12px;
+    color: var(--paper-text-soft);
+    max-width: 52ch; 
+    font-size: 16px;
+
+}
+
+#buscador {
+    
+    background: var(--paper-2);
+    padding: 64px 0 90px;
+    margin-top: -52px;
+    position: relative;
+    z-index:2;
+
+}
+  
+.search-card {
+    
+    background: var(--paper);
+    border: 1px solid var(--line);
+    box-shadow: 0 18px 50px rgba(27,23,32,.1);
+    padding: 36px;
+
+}
+  
+@media (max-width:576px) {
+    .search-card {
+        
+        padding: 22px;
+    }
+}
+
+.trip-toggle {
+    
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+
+}
+  
+.trip-toggle .btn {
+    
+    border-radius: 0;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink-soft);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+  
+}
+  
+.trip-toggle .btn.active {
+    
+    background: var(--ink);
+    border-color: var(--ink);
+    color: #fff;
+
+}
+
+label .field-label {
+    
+    font-size: 12.5px;
+    letter-spacing: .03em; 
+    color: var(--ink-faint);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+
+}
+  
+.form-control, .custom-select {
+
+    border-radius: 0;
+    border: 1px solid var(--line);
+    padding: 11px 14px;
+    height: auto;
+    font-size: 15px;
+    color: var(--ink);
+    background-color: #fff;
+  
+}
+  
+.form-control:focus, .custom-select:focus {
+    
+    border-color: var(--shu);
+    box-shadow: 0 0 0 3px rgba(188,58,42,.12);
+
+}
+  
+.input-group-text {
+    
+    border-radius: 0;
+    background: var(--paper-2);
+    border-color: var(--line);
+    color: var(--ink-soft);
+
+}
+
+.btn-shu { 
+    
+    background: var(--shu);
+    border-color: var(--shu);
+    color: #fff;
+    border-radius: 0;
+    font-weight: 600;
+    padding: 13px 30px;
+    font-size: 15px;
+    letter-spacing: .01em;
+
+}
+  
+.btn-shu:hover {
+    
+    background: var(--shu-dark);
+    border-color: var(--shu-dark);
+    color: #fff;
+
+}
+
+.tip-note {
+    
+    border-left: 3px solid var(--gold);
+    background: rgba(176,138,62,.08);
+    padding: 14px 18px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-top: 26px;
+
+}
+
+.confirm-box {
+    
+    display: none;
+    border: 1px solid var(--line);
+    background: #fff;
+    padding: 22px 24px;
+    margin-top: 26px;
+
+}
+  
+.confirm-box.show {
+    
+    display: block;
+
+}
+  
+.confirm-box h3 {
+    
+    font-size: 19px;
+    margin-bottom: 8px;
+
+}
+  
+.confirm-box p {
+    
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+
+}
+
+#rutas {
+    
+    background: var(--paper);
+    padding: 90px 0;
+
+}
+  
+.section-head {
+    
+    max-width: 600px;
+    margin-bottom: 44px;
+
+}
+  
+.eyebrow {
+    
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13.5px;
+    color: var(--shu);
+    margin-bottom: 14px;
+    font-weight: 600;
+
+}
+  
+.section-title {
+    
+    font-size: clamp(28px,3.6vw,42px);
+
+}
+  
+.section-dek {
+    
+    margin-top: 14px;
+    color: var(--ink-soft);
+    font-size: 16px;
+
+}
+
+.route-card {
+    
+    border: 1px solid var(--line);
+    background: var(--paper);
+    height: 100%;
+
+}
+  
+.route-media {
+    
+    aspect-ratio: 4/3;
+    overflow: hidden;
+
+}
+  
+.route-media img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+  
+.route-body {
+    
+    padding: 20px 22px 24px;
+
+}
+  
+.route-cities {
+    
+    font-family:'Fraunces',serif;
+    font-style: italic;
+    font-size: 20px;
+
+}
+  
+.route-meta {
+    
+    font-size: 13px;
+    color: var(--ink-faint);
+    margin-top: 6px;
+
+}
+  
+.route-price {
+    
+    margin-top: 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+
+}
+  
+.route-price .amount {
+    
+    font-family:'Fraunces',serif;
+    font-size: 24px;
+
+}
+  
+.route-price .note {
+    
+    font-size: 12px;
+    color: var(--ink-faint);
+
+}
+ 
+footer {
+    
+    background: var(--ink);
+    color: var(--paper-text-soft);
+    padding: 44px 0 24px;
+
+}
+  
+footer a {
+    
+    text-decoration: none;
+    color: var(--paper-text-soft);
+
+}
+  
+footer a:hover {
+    
+    color: var(--paper-text);
+
+}
+  
+.foot-bottom { 
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12.5px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line-onDark);
+    margin-top: 24px;
+
+}
