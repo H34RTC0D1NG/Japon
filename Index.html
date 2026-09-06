@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="CSS/Seccion_4.css">
     <link rel="stylesheet" href="CSS/Seccion_5.css">
     <link rel="stylesheet" href="CSS/Seccion_6.css">
+    <link rel="stylesheet" href="CSS/Seccion_7.css">
 
     <link rel="stylesheet" href="CSS/Responsive.css">
 
@@ -342,6 +343,43 @@
         </div>
     </section>
 
+    <!-- Seccion 7 / Contacto -->
+
+    <section id="contacto" class="seccion-contacto">
+        <div class="contacto-contenedor">
+            <div class="contacto-titulo">
+                <h2>Contacto</h2>
+                <p>
+                    ¿Tienes alguna consulta? Completa el formulario
+                    y envíanos tu mensaje.
+                </p>
+            </div>
+
+            <form id="formContacto" class="formulario-contacto" novalidate>
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autocomplete="name">
+                    <small class="mensaje-error" id="errorNombre"></small>
+                </div>
+                <div class="campo-formulario">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email">
+                    <small class="mensaje-error" id="errorCorreo"></small>
+                </div>
+                <div class="campo-formulario">
+                    <label for="mensaje">Comentario o mensaje</label>
+                    <textarea id="mensaje"name="mensaje" rows="6" placeholder="Escribe aquí tu consulta o mensaje..."></textarea>
+                    <small class="mensaje-error" id="errorMensaje"></small>
+                </div>
+                <button type="submit" class="boton-enviar">
+                    Enviar mensaje
+                </button>
+
+                <p id="mensajeExito" class="mensaje-exito"></p>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
 
     <footer id="contact">
@@ -404,6 +442,10 @@
     </footer>
 
     <!-- Scripts Externos -->
+
+        <!-- Script Interno -->
+
+        <script src="JS/Contacto.js"></script>
 
         <!-- FontAwesome Icons -->
 
