@@ -1,0 +1,3 @@
+# Sitio web de Japón
+
+Recoradr sacar las variables en CSS ya que no se esta trabajando con eso se usarlas pero es Ilegalisimo ... 
