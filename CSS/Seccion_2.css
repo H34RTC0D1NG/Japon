@@ -1,0 +1,86 @@
+:root{
+    
+    --ink:#1B1720;
+    --ink-soft:rgba(27,23,32,.66);
+    --ink-faint:rgba(27,23,32,.42);
+    --paper:#F7F3EA;
+    --paper-2:#EEE6D4;
+    --paper-text:#F7F3EA;
+    --paper-text-soft:rgba(247,243,234,.72);
+    --shu:#BC3A2A;
+    --shu-dark:#8F2A1E;
+    --indigo:#233752;
+    --gold:#B08A3E;
+    --line:rgba(27,23,32,.14);
+    --line-onDark:rgba(247,243,234,.18);
+
+}
+
+section {
+    
+    padding: 120px 0;
+  
+}
+  
+.section-head {
+
+    max-width: 620px;
+    margin-bottom: 56px;
+  
+}
+  
+.section-head {
+    
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  
+}
+  
+.eyebrow {
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13.5px;
+    color: var(--shu);
+    margin-bottom: 14px;
+    font-weight: 600;
+  
+}
+  
+.section-head .eyebrow {
+  
+    justify-content: center;
+  
+}
+
+.eyebrow img {
+  
+    width:18px;
+    height:18px;
+  
+}
+  
+.section-title {
+    
+    font-size:clamp(32px,4.2vw,50px);
+  
+}
+  
+.section-dek {
+    
+    margin-top:16px;
+    color:var(--ink-soft);
+    font-size:17px;
+    max-width:58ch;
+  
+}
+  
+.section-head .section-dek {
+    
+    margin-left:auto;
+    margin-right:auto;
+  
+}

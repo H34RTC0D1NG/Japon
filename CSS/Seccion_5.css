@@ -1,0 +1,57 @@
+:root{
+    
+    --ink:#1B1720;
+    --ink-soft:rgba(27,23,32,.66);
+    --ink-faint:rgba(27,23,32,.42);
+    --paper:#F7F3EA;
+    --paper-2:#EEE6D4;
+    --paper-text:#F7F3EA;
+    --paper-text-soft:rgba(247,243,234,.72);
+    --shu:#BC3A2A;
+    --shu-dark:#8F2A1E;
+    --indigo:#233752;
+    --gold:#B08A3E;
+    --line:rgba(27,23,32,.14);
+    --line-onDark:rgba(247,243,234,.18);
+
+}
+
+#galeria {
+    
+    background: var(--paper-2);
+
+}
+  
+.place-grid{
+    
+    columns: 4 260px;column-gap:14px;
+  
+}
+
+  
+.place-grid img {
+    
+    width: 100%;
+    display: block;
+    transition: transform .5s ease;
+
+}
+  
+.place-grid img:hover {
+    
+    transform: scale(1.04);
+
+}
+  
+.place-cap{
+   
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0,0,0,.6), transparent);
+  
+}

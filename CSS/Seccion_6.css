@@ -1,0 +1,66 @@
+#consejos {
+    
+    background: var(--indigo);
+    color: var(--paper-text);
+
+}
+  
+#consejos .eyebrow {
+    
+    color: #C9AA6E;
+
+}
+  
+#consejos .eyebrow img {
+    
+    filter: brightness(0) invert(1);
+
+}
+  
+#consejos .section-dek { 
+    
+    color: var(--paper-text-soft);
+
+}
+  
+.tip-grid { 
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1px;
+    background: var(--line-onDark);
+    border: 1px solid var(--line-onDark);
+
+}
+  
+.tip {
+    
+    background: var(--indigo);
+    padding: 30px 24px;
+
+}
+  
+.tip-num { 
+    
+    font-family: 'Fraunces',serif;
+    font-style: italic;
+    font-size: 26px; 
+    color: #C9AA6E;
+
+}
+  
+.tip h3 {
+    
+    font-size: 19px;
+    margin-top: 14px;
+    font-weight: 500;
+
+}
+  
+.tip p {
+    
+    font-size: 14px;
+    color: var(--paper-text-soft);
+    margin-top: 10px;
+
+}

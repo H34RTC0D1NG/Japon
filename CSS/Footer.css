@@ -1,0 +1,122 @@
+footer {
+    
+    background: var(--ink);
+    color: var(--paper-text-soft);
+    padding: 64px 0 26px;
+
+}
+  
+.foot-top {
+    
+    display:grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap:40px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid var(--line-onDark);
+
+}
+  
+.foot-brand-word {
+    
+    font-family: 'Fraunces',serif;
+    font-style: italic;
+    font-size: 26px;
+    color: var(--paper-text);
+
+}
+  
+.foot-tag {
+    
+    margin-top: 14px;
+    font-size:14px;
+    max-width:32ch;
+    color: var(--paper-text-soft);
+
+}
+  
+.foot-col h3 {
+    
+    font-size: 13px;
+    font-weight: 600; 
+    color: var(--paper-text);
+    margin-bottom: 16px;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+  
+.foot-col h3::after {
+    
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 26px;
+    height: 2px;
+    background: var(--shu);
+
+}
+  
+.foot-col ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+  
+.foot-col a { 
+    
+    text-decoration: none;
+    color: var(--paper-text-soft);
+    font-size: 14.5px; 
+    transition: color .15s ease;
+
+}
+  
+.foot-col a:hover {
+    
+    color: var(--paper-text);
+
+}
+  
+.social-row { 
+    
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+
+}
+  
+.social-row a{
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--line-onDark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--paper-text-soft);
+    transition: border-color .15s ease, color .15s ease;
+  
+}
+  
+.social-row a:hover {
+    
+    border-color: crimson;
+    text-decoration: none;
+    color: white;
+
+}
+ 
+.foot-bottom {
+    
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; gap: 10px;
+    font-size: 12.5px;
+
+}
