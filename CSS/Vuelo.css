@@ -1,21 +1,3 @@
-:root{
-    
-    --ink:#1B1720;
-    --ink-soft:rgba(27,23,32,.66);
-    --ink-faint:rgba(27,23,32,.42);
-    --paper:#F7F3EA;
-    --paper-2:#EEE6D4;
-    --paper-text:#F7F3EA;
-    --paper-text-soft:rgba(247,243,234,.72);
-    --shu:#BC3A2A;
-    --shu-dark:#8F2A1E;
-    --indigo:#233752;
-    --gold:#B08A3E;
-    --line:rgba(27,23,32,.14);
-    --line-onDark:rgba(247,243,234,.18);
-
-}
-
 * {
     
     box-sizing: border-box;
@@ -25,8 +7,8 @@
 body {
     
     margin: 0;
-    background: var(--paper);
-    color: var(--ink);
+    background: #F7F3EA;
+    color: #1B1720;
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing:antialiased;
@@ -56,7 +38,7 @@ h1, h2, h3, .display {
     min-height: 50vh;
     display: flex;
     align-items: center;
-    color: var(--paper-text);
+    color: #F7F3EA;
     overflow:hidden;
 
 }
@@ -97,7 +79,7 @@ h1, h2, h3, .display {
     align-items: center;
     gap:10px;
     font-size: 13px;
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
     margin-bottom: 12px;
 
 }
@@ -107,7 +89,7 @@ h1, h2, h3, .display {
     content: "";
     width: 22px;
     height: 1px;
-    background: var(--shu);
+    background: #BC3A2A;
     display: inline-block;
 
 }
@@ -124,7 +106,7 @@ h1, h2, h3, .display {
     
     text-align: justify;
     margin-top: 12px;
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
     max-width: 52ch; 
     font-size: 16px;
 
@@ -132,7 +114,7 @@ h1, h2, h3, .display {
 
 #buscador {
     
-    background: var(--paper-2);
+    background: #EEE6D4;
     padding: 64px 0 90px;
     margin-top: -52px;
     position: relative;
@@ -142,8 +124,8 @@ h1, h2, h3, .display {
   
 .search-card {
     
-    background: var(--paper);
-    border: 1px solid var(--line);
+    background: #F7F3EA;
+    border: 1px solid rgba(27,23,32,.14);
     box-shadow: 0 18px 50px rgba(27,23,32,.1);
     padding: 36px;
 
@@ -167,9 +149,9 @@ h1, h2, h3, .display {
 .trip-toggle .btn {
     
     border-radius: 0;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(27,23,32,.14);
     background: transparent;
-    color: var(--ink-soft);
+    color: rgba(27,23,32,.66);
     font-size: 14px;
     font-weight: 600;
     padding: 10px 20px;
@@ -178,8 +160,8 @@ h1, h2, h3, .display {
   
 .trip-toggle .btn.active {
     
-    background: var(--ink);
-    border-color: var(--ink);
+    background: #1B1720;
+    border-color: #1B1720;
     color: #fff;
 
 }
@@ -188,7 +170,7 @@ label .field-label {
     
     font-size: 12.5px;
     letter-spacing: .03em; 
-    color: var(--ink-faint);
+    color: rgba(27,23,32,.42);
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 6px;
@@ -198,18 +180,18 @@ label .field-label {
 .form-control, .custom-select {
 
     border-radius: 0;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(27,23,32,.14);
     padding: 11px 14px;
     height: auto;
     font-size: 15px;
-    color: var(--ink);
+    color: #1B1720;
     background-color: #fff;
   
 }
   
 .form-control:focus, .custom-select:focus {
     
-    border-color: var(--shu);
+    border-color: #BC3A2A;
     box-shadow: 0 0 0 3px rgba(188,58,42,.12);
 
 }
@@ -217,16 +199,16 @@ label .field-label {
 .input-group-text {
     
     border-radius: 0;
-    background: var(--paper-2);
-    border-color: var(--line);
-    color: var(--ink-soft);
+    background: #EEE6D4;
+    border-color: rgba(27,23,32,.14);
+    color: rgba(27,23,32,.66);
 
 }
 
 .btn-shu { 
     
-    background: var(--shu);
-    border-color: var(--shu);
+    background: #BC3A2A;
+    border-color: #BC3A2A;
     color: #fff;
     border-radius: 0;
     font-weight: 600;
@@ -238,19 +220,19 @@ label .field-label {
   
 .btn-shu:hover {
     
-    background: var(--shu-dark);
-    border-color: var(--shu-dark);
+    background: #8F2A1E;
+    border-color: #8F2A1E;
     color: #fff;
 
 }
 
 .tip-note {
     
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid #B08A3E;
     background: rgba(176,138,62,.08);
     padding: 14px 18px;
     font-size: 14px;
-    color: var(--ink-soft);
+    color: rgba(27,23,32,.66);
     margin-top: 26px;
 
 }
@@ -258,7 +240,7 @@ label .field-label {
 .confirm-box {
     
     display: none;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(27,23,32,.14);
     background: #fff;
     padding: 22px 24px;
     margin-top: 26px;
@@ -282,13 +264,13 @@ label .field-label {
     
     margin: 0;
     font-size: 14.5px;
-    color: var(--ink-soft);
+    color: rgba(27,23,32,.66);
 
 }
 
 #rutas {
     
-    background: var(--paper);
+    background: #F7F3EA;
     padding: 90px 0;
 
 }
@@ -306,7 +288,7 @@ label .field-label {
     align-items: center;
     gap: 9px;
     font-size: 13.5px;
-    color: var(--shu);
+    color: #BC3A2A;
     margin-bottom: 14px;
     font-weight: 600;
 
@@ -321,15 +303,15 @@ label .field-label {
 .section-dek {
     
     margin-top: 14px;
-    color: var(--ink-soft);
+    color: rgba(27,23,32,.66);
     font-size: 16px;
 
 }
 
 .route-card {
     
-    border: 1px solid var(--line);
-    background: var(--paper);
+    border: 1px solid rgba(27,23,32,.14);
+    background: #F7F3EA;
     height: 100%;
 
 }
@@ -366,7 +348,7 @@ label .field-label {
 .route-meta {
     
     font-size: 13px;
-    color: var(--ink-faint);
+    color: rgba(27,23,32,.42);
     margin-top: 6px;
 
 }
@@ -390,14 +372,14 @@ label .field-label {
 .route-price .note {
     
     font-size: 12px;
-    color: var(--ink-faint);
+    color: rgba(27,23,32,.42);
 
 }
  
 footer {
     
-    background: var(--ink);
-    color: var(--paper-text-soft);
+    background: #1B1720;
+    color: rgba(247,243,234,.72);
     padding: 44px 0 24px;
 
 }
@@ -405,13 +387,13 @@ footer {
 footer a {
     
     text-decoration: none;
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
 
 }
   
 footer a:hover {
     
-    color: var(--paper-text);
+    color: #F7F3EA;
 
 }
   
@@ -423,7 +405,7 @@ footer a:hover {
     gap: 10px;
     font-size: 12.5px;
     padding-top: 20px;
-    border-top: 1px solid var(--line-onDark);
+    border-top: 1px solid rgba(247,243,234,.18);
     margin-top: 24px;
 
 }

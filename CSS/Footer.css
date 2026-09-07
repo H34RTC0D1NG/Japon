@@ -1,7 +1,7 @@
 footer {
     
-    background: var(--ink);
-    color: var(--paper-text-soft);
+    background: #1B1720;
+    color: rgba(247,243,234,.72);
     padding: 64px 0 26px;
 
 }
@@ -12,7 +12,7 @@ footer {
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
     gap:40px;
     padding-bottom: 44px;
-    border-bottom: 1px solid var(--line-onDark);
+    border-bottom: 1px solid rgba(247,243,234,.18);
 
 }
   
@@ -21,7 +21,7 @@ footer {
     font-family: 'Fraunces',serif;
     font-style: italic;
     font-size: 26px;
-    color: var(--paper-text);
+    color: #F7F3EA;
 
 }
   
@@ -30,7 +30,7 @@ footer {
     margin-top: 14px;
     font-size:14px;
     max-width:32ch;
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
 
 }
   
@@ -38,7 +38,7 @@ footer {
     
     font-size: 13px;
     font-weight: 600; 
-    color: var(--paper-text);
+    color: #F7F3EA;
     margin-bottom: 16px;
     position: relative;
     padding-bottom: 10px;
@@ -53,7 +53,7 @@ footer {
     bottom: 0;
     width: 26px;
     height: 2px;
-    background: var(--shu);
+    background: #BC3A2A;
 
 }
   
@@ -71,7 +71,7 @@ footer {
 .foot-col a { 
     
     text-decoration: none;
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
     font-size: 14.5px; 
     transition: color .15s ease;
 
@@ -79,7 +79,7 @@ footer {
   
 .foot-col a:hover {
     
-    color: var(--paper-text);
+    color: #F7F3EA;
 
 }
   
@@ -92,13 +92,14 @@ footer {
 }
   
 .social-row a{
+
     width: 36px;
     height: 36px;
-    border: 1px solid var(--line-onDark);
+    border: 1px solid rgba(247,243,234,.18);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
     transition: border-color .15s ease, color .15s ease;
   
 }

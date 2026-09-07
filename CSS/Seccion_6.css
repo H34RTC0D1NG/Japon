@@ -1,7 +1,7 @@
 #consejos {
     
-    background: var(--indigo);
-    color: var(--paper-text);
+    background: #233752;
+    color: #F7F3EA;
 
 }
   
@@ -19,7 +19,7 @@
   
 #consejos .section-dek { 
     
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
 
 }
   
@@ -28,14 +28,14 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1px;
-    background: var(--line-onDark);
-    border: 1px solid var(--line-onDark);
+    background: rgba(247,243,234,.18);
+    border: 1px solid rgba(247,243,234,.18);
 
 }
   
 .tip {
     
-    background: var(--indigo);
+    background: #233752;
     padding: 30px 24px;
 
 }
@@ -60,7 +60,7 @@
 .tip p {
     
     font-size: 14px;
-    color: var(--paper-text-soft);
+    color: rgba(247,243,234,.72);
     margin-top: 10px;
 
 }

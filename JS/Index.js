@@ -1,6 +1,3 @@
-
-    // JS - Funcional 
-
     const tripBtns = document.querySelectorAll('.trip-toggle .btn');
     const fechaVuelta = document.getElementById('fechaVuelta');
     tripBtns.forEach(btn => {
