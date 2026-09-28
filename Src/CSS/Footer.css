@@ -1,0 +1,123 @@
+footer {
+    
+    background: #1B1720;
+    color: rgba(247,243,234,.72);
+    padding: 64px 0 26px;
+
+}
+  
+.foot-top {
+    
+    display:grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap:40px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid rgba(247,243,234,.18);
+
+}
+  
+.foot-brand-word {
+    
+    font-family: 'Fraunces',serif;
+    font-style: italic;
+    font-size: 26px;
+    color: #F7F3EA;
+
+}
+  
+.foot-tag {
+    
+    margin-top: 14px;
+    font-size:14px;
+    max-width:32ch;
+    color: rgba(247,243,234,.72);
+
+}
+  
+.foot-col h3 {
+    
+    font-size: 13px;
+    font-weight: 600; 
+    color: #F7F3EA;
+    margin-bottom: 16px;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+  
+.foot-col h3::after {
+    
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 26px;
+    height: 2px;
+    background: #BC3A2A;
+
+}
+  
+.foot-col ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+  
+.foot-col a { 
+    
+    text-decoration: none;
+    color: rgba(247,243,234,.72);
+    font-size: 14.5px; 
+    transition: color .15s ease;
+
+}
+  
+.foot-col a:hover {
+    
+    color: #F7F3EA;
+
+}
+  
+.social-row { 
+    
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+
+}
+  
+.social-row a{
+
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(247,243,234,.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(247,243,234,.72);
+    transition: border-color .15s ease, color .15s ease;
+  
+}
+  
+.social-row a:hover {
+    
+    border-color: crimson;
+    text-decoration: none;
+    color: white;
+
+}
+ 
+.foot-bottom {
+    
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; gap: 10px;
+    font-size: 12.5px;
+
+}

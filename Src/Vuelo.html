@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://drive.google.com/thumbnail?id=1WzMIxDmuuHMCEZMGAfj7oQbDBlOyPvkg&sz=w1000">
+
+    <title> Aerolinea Mejias </title>
+
+    <!-- Link De Bootstrap Version 4.6 -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Link CSS -->
+
+    <link rel="stylesheet" href="CSS/Webkit.css">
+    <link rel="stylesheet" href="CSS/Vuelo.css">
+
+</head>
+<body>
+
+    <!-- Menu / Copiado de la pagina principal hecho en la version de Bootstrap 4.6 -->
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Index.html">
+                <i class="fa-solid fa-torii-gate"></i>
+                <strong><em>Japón</em></strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inicio"> 
+                            <i class="fa-solid fa-house"></i>
+                            <strong>Inicio</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#buscador"> 
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <strong>Reservar</strong>     
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rutas"> 
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <strong>Adonde Ir</strong>     
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion 1 / Banner de reserva tu vuelo -->
+
+    <div class="page-hero" id="Inicio">
+        <img src="https://drive.google.com/thumbnail?id=1Wj4bbg-7ul70mQ6IWYAkEnRxAp80x8Ot&sz=w1000" alt="Imagen No Encontrada">
+        <div class="wrap page-hero-inner">
+            <p class="page-kicker"> <strong><em> Vuelos hacia el país del sol naciente. </em></strong></p>
+            <h1 class="page-title">Reserva tu vuelo</h1>
+            <p class="page-sub"><strong><em> 
+                  Verifica las Rutas, Valida las Fechas, y viaja al misterio, un lugar lleno de aventuras,
+                  buenos momentos y muchas otros misterios te deparan en esta aventura.
+            </em></strong></p>
+        </div>
+    </div>
+
+    <!-- Seccion 2 / Buscador Funcional con JS -->
+
+    <section id="buscador">
+        <div class="wrap">
+            <div class="search-card">
+                <div class="trip-toggle" role="group" aria-label="Tipo de viaje">
+                    <button type="button" class="btn active" data-trip="redondo">Ida y vuelta</button>
+                    <button type="button" class="btn" data-trip="ida">Solo ida</button>
+                </div>
+                <form id="flightForm" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <label class="field-label" for="origen">Origen</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa-brands fa-avianex"></i></span></div>
+                                <select class="custom-select" id="origen" required>
+                                    <option value="SCL" selected>Santiago (SCL)</option>
+                                    <option value="LIM">Lima (LIM)</option>
+                                    <option value="GRU">São Paulo (GRU)</option>
+                                    <option value="BOG">Bogotá (BOG)</option>
+                                    <option value="MEX">Ciudad de México (MEX)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="field-label" for="destino">Destino</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa-solid fa-earth-americas"></i></span></div>
+                                <select class="custom-select" id="destino" required>
+                                    <option value="NRT" selected>Tokio — Narita (NRT)</option>
+                                    <option value="HND">Tokio — Haneda (HND)</option>
+                                    <option value="KIX">Osaka (KIX)</option>
+                                    <option value="NGO">Nagoya (NGO)</option>
+                                    <option value="FUK">Fukuoka (FUK)</option>
+                                    <option value="CTS">Sapporo (CTS)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <label class="field-label" for="fechaIda">Fecha de ida</label>
+                            <input type="date" class="form-control" id="fechaIda" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="field-label" for="fechaVuelta">Fecha de vuelta</label>
+                            <input type="date" class="form-control" id="fechaVuelta">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-4 form-group">
+                            <label class="field-label" for="adultos">Pasajeros adultos</label>
+                            <select class="custom-select" id="adultos">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label class="field-label" for="ninos">Pasajeros niños</label>
+                            <select class="custom-select" id="ninos">
+                                <option selected>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label class="field-label" for="clase">Clase</label>
+                            <select class="custom-select" id="clase">
+                                <option>Económica</option>
+                                <option>Premium Economy</option>
+                                <option>Ejecutiva</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-shu btn-block btn-lg mt-2">Buscar vuelos</button>
+
+                    <p class="tip-note">
+                        Los vuelos a Tokio suelen ser más económicos reservando con dos o tres meses de anticipación, 
+                        y evitando las semanas de floración del sakura (fines de marzo-abril) si el presupuesto es 
+                        lo primero.
+                    </p>
+                </form>
+
+                <div class="confirm-box" id="confirmBox">
+                    <h3>Búsqueda enviada</h3>
+                    <p id="confirmText"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="rutas">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow"><i class="fa-solid fa-map-location-dot"></i> Rutas populares</p>
+            <h2 class="section-title">A dónde volar primero</h2>
+            <p class="section-dek">Tres puntos de entrada frecuentes para empezar un primer viaje a Japón.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="route-card">
+                <div class="route-media"><img src="https://drive.google.com/thumbnail?id=1WpQso8WQgDOSeUvTQgv9-O1pAkBgR-x_&sz=w1000" alt="Torre de Tokio"></div>
+                <div class="route-body">
+                  <div class="route-cities">Santiago <i class="fa-solid fa-arrow-right"></i> Tokio</div>
+                  <div class="route-meta">Vía Los Ángeles o Dallas <i class="fa-regular fa-circle-dot"></i> 28 a 32 Hrs</div>
+                  <div class="route-price"><span class="amount">desde $980.000</span><span class="note">CLP, ida y vuelta*</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="route-card">
+                <div class="route-media"><img src="https://drive.google.com/thumbnail?id=1TAKWp3_ctW9-pGjD__A05fTOfJfdMjxc&sz=w1000" alt="Monte Fuji al atardecer"></div>
+                <div class="route-body">
+                  <div class="route-cities">Santiago <i class="fa-solid fa-arrow-right"></i> Osaka</div>
+                  <div class="route-meta">Vía Tokio (conexión) <i class="fa-regular fa-circle-dot"></i> 31 a 35 Hrs</div>
+                  <div class="route-price"><span class="amount">desde $1.050.000</span><span class="note">CLP, ida y vuelta*</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="route-card">
+                <div class="route-media"><img src="https://drive.google.com/thumbnail?id=1HqBg2Nw5eM-T9vXuGOXz8bGRX3tcyhUO&sz=w1000" alt="Castillo japonés iluminado de noche"></div>
+                <div class="route-body">
+                  <div class="route-cities">Santiago <i class="fa-solid fa-arrow-right"></i> Sapporo</div>
+                  <div class="route-meta">Vía Tokio (conexión) <i class="fa-regular fa-circle-dot"></i> 33 a 37 Hrs</div>
+                  <div class="route-price"><span class="amount">desde $1.180.000</span><span class="note">CLP, ida y vuelta*</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- Footer / Pie de Pagina / Del apartado Vuelos -->
+
+    <footer id="foo">
+        <div class="wrap">
+            <div class="d-flex flex-wrap justify-content-between" style="gap:20px;">
+                <div>
+                    <span style="font-family:'Fraunces',serif;font-style:italic;font-size:22px;color:var(--paper-text);"><i class="fa-solid fa-torii-gate"></i> Japón</span>
+                    <p style="margin-top:10px;font-size:13.5px;max-width:34ch;">
+                        Reservas de <strong><em>Vuelo</em></strong> hacia Japón si te inscribiste mi tactica funciono.
+                    </p>
+                </div>
+            </div>
+            <div class="foot-bottom">
+                <span>Aerolineas Mejias</span>
+                <span>Implementando JS</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Externos -->
+
+        <!-- FontAwesome Icons -->
+
+        <script src="https://kit.fontawesome.com/528d2e1189.js" 
+        crossorigin="anonymous"></script>
+
+        <!-- Bootstrap V4.6 -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"     
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+        crossorigin="anonymous"></script>
+
+        <script src="JS/Index.js"></script>
+
+</body>
+</html>

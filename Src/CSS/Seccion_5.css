@@ -1,0 +1,39 @@
+#galeria {
+    
+    background: #EEE6D4;
+
+}
+  
+.place-grid{
+    
+    columns: 4 260px;column-gap:14px;
+  
+}
+
+  
+.place-grid img {
+    
+    width: 100%;
+    display: block;
+    transition: transform .5s ease;
+
+}
+  
+.place-grid img:hover {
+    
+    transform: scale(1.04);
+
+}
+  
+.place-cap{
+   
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0,0,0,.6), transparent);
+  
+}
