@@ -1,0 +1,363 @@
+html {
+
+    scroll-behavior : smooth;
+    scroll-padding-top : 70px;
+
+} body::-webkit-scrollbar {
+
+    width : 0;
+
+} .Banner {
+
+    width : 100%;
+    height : 100%;
+    object-fit : cover;
+    background-size : cover;
+    background-position : center;
+    background-repeat : no-repeat;
+
+} .banner img {
+
+    position : absolute;
+    inset : 0;
+    width : 100%;
+    height : 100svh;
+    object-fit : cover;
+    object-position : center;
+
+} .btn {
+
+    display : inline-block;
+    align-items : center;
+    gap : 8px;
+    padding : 14px 28px;
+    border-radius : 5px;
+    font-size : 14px;
+    font-weight : 600;
+    text-decoration : none;
+    border : 1px solid transparent;
+    cursor : pointer;
+    transition : transform .2s ease,    background .2s ease,
+                 border-color .2s ease, box-shadow .2s ease;
+
+} .btn:hover {
+
+    transform : translateY(-3px);
+
+} .btn-rojo {
+
+    background : red;
+    color : #fff;
+    box-shadow : 0 10px 30px rgba(188, 58, 42 .4);
+
+} .btn-rojo:hover {
+
+    background : #8F2A1E;
+
+} .btn-borde {
+
+    border-color : rgba(247, 243, 234, .35);
+    backdrop-filter : blur(6px);
+    color : #F7F3EA;
+
+} .btn-borde:hover {
+
+    background : rgba(247, 243, 234, .08);
+    border-color : #F7F3EA;
+
+} .btn a {
+
+    color : inherit;
+    text-decoration : none;
+
+} .navbar.bg-dark {
+
+    background-color : transparent !important;
+    z-index : 50;
+    padding : 0;
+
+} .navbar.bg-dark::before {
+
+    content : '';
+    position : absolute;
+    inset : 0;
+    z-index : -1;
+    background : rgba(27, 23, 32, .88);
+    backdrop-filter : blur(14px);
+    -webkit-backdrop-filter : blur(14px);
+    box-shadow : 0 6px 30px rgba(0, 0, 0, .25);
+
+} .navbar .container {
+
+    max-width : 1180px;
+    padding : 14px 28px;
+
+} .navbar .marca {
+
+    display : flex;
+    align-items : center;
+    gap : 8px;
+    font-size : 22px;
+    color : #fff;
+    transition : color .2s;
+
+} .navbar-nav {
+
+    gap : 4px;
+
+} .navbar .nav-link {
+
+    position : relative;
+    padding : 8px 14px;
+    font-size : 14px;
+    font-weight : 500;
+    letter-spacing : .02em;
+    color : rgba(255, 255, 255, .8);
+    transition : color .2s;
+
+} .navbar .nav-link::after {
+
+    content : '';
+    position : absolute;
+    left : 14px;
+    right : 14px;
+    bottom : 2px;
+    height : 2px;
+    background : red;
+    transform: scaleX(0);
+    transform-origin : left;
+    transition : transform .3s ease;
+
+} .navbar .nav-link:hover, .navbar .nav-link:focus {
+
+    color : #fff;
+
+} .navbar .nav-link:hover::after {
+
+    transform : scaleX(1);
+
+} @supports (animation-timeline : scroll()) {
+
+    .navbar.bg-dark::before {
+
+        opacity : 0;
+        animation : navbar-fondo linear both;
+        animation-timeline : scroll();
+        animation-range : 0 120px;
+
+    } .navbar .marca {
+
+        color : #1B1720;
+        animation : navbar-texto linear both;
+        animation-timeline : scroll();
+        animation-range : 0 120px;
+
+    } .navbar .nav-link {
+
+        color : rgba(27, 23, 32, .66);
+        animation : navbar-texto linear both;
+        animation-timeline : scroll();
+        animation-range : 0 120px;
+
+    } .navbar .nav-link:hover, .navbar .nav-link:focus {
+
+        color : #1B1720;
+
+    } @keyframes navbar-fondo {
+        
+        to {
+
+            opacity : 1;
+
+        }
+
+    } @keyframes navbar-texto {
+        
+        to {
+
+            color : white;
+
+        }
+
+    }
+
+} @media (max-width : 991.98px) {
+
+    .navbar .container {
+
+        flex-direction : column;
+        gap : 4px;
+        padding : 10px 16px 6px;
+        
+    } .navbar-nav {
+
+        width : 100%;
+        gap : 0;
+        justify-content : flex-start;
+        overflow : auto;
+        scrollbar-width : none;
+
+    } .navbar .nav-link {
+
+        padding : 8px 12px;
+        font-size : 13px;
+        white-space : nowrap;
+
+    } .navbar .nav-link::after {
+
+        left : 12px;
+        right : 12px;
+
+    }
+
+} @media (max-width : 575.98px) {
+
+    .navbar .marca {
+
+        font-size : 20px;
+
+    }
+
+} footer {
+
+    background : #1B1720;
+    color : rgba(247, 243, 234, .72);
+    padding : 70px 0 26px;
+
+} footer .wrap {
+
+    max-width : 1180px;
+    margin : 0 auto;
+    padding : 0 28px;
+
+} footer a {
+
+    color : inherit;
+    text-decoration : none;
+
+} .pie-grid {
+
+    display : grid;
+    grid-template-columns : 1.4fr 1fr 1fr 1fr;
+    gap : 40px;
+    padding-bottom : 44px;
+    border-bottom : 1px solid rgba(247, 243, 234, .18);
+
+} .pie-marca {
+
+    font-family : 'Fraunces', Georgia, serif;
+    font-size : 26px;
+    color : #F7F3EA;
+    display : flex;
+    align-items : center;
+    gap : 8px;
+
+} .pie-marca svg {
+
+    color : #BC3A2A;
+
+} .pie-texto {
+
+    margin-top : 14px;
+    font-size : 14px;
+    max-width : 340px;
+
+} .redes {
+
+    display : flex;
+    gap : 10px;
+    margin-top : 18px;
+
+} .redes a {
+
+    width : 40px;
+    height : 40px;
+    border-radius : 50%;
+    border : 1px solid rgba(247, 243, 234, .2);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    transition : all .25s ease;
+
+} .redes a:hover {
+
+    background : #BC3A2A;
+    border-color : #BC3A2A;
+    color : #fff;
+    transform : translateY(-4px);
+
+} .pie-col h3 {
+
+    position : relative;
+    font-family : 'Inter', system-ui, sans-serif;
+    font-size : 13px;
+    font-weight : 600;
+    color : #F7F3EA;
+    margin-bottom : 18px;
+    padding-bottom : 10px;
+
+} .pie-col h3::after {
+
+    content : '';
+    position : absolute;
+    left : 0;
+    bottom : 0;
+    width : 26px;
+    height : 2px;
+    background : #BC3A2A;
+
+} .pie-col ul {
+
+    list-style : none;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    flex-direction : column;
+    gap : 10px;
+    font-size : 14.5px;
+
+} .pie-col li {
+
+    display : flex;
+    align-items : center;
+    gap : 8px;
+
+} .pie-col a {
+
+    display : inline-flex;
+    align-items : center;
+    gap : 8px;
+    transition : color .2s, transform .2s;
+
+} .pie-col a:hover {
+
+    color : #fff;
+    transform : translateX(4px);
+
+} .pie-abajo {
+
+    padding-top : 24px;
+    display : flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    gap : 10px;
+    font-size : 12.5px;
+
+} @media (max-width : 980px) {
+
+    .pie-grid {
+
+        grid-template-columns : 1fr 1fr;
+
+    }
+
+} @media (max-width : 720px) {
+
+    .pie-grid {
+
+        grid-template-columns : 1fr;
+        gap : 32px;
+
+    }
+
+}
